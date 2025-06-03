@@ -1,0 +1,37 @@
+void pars_flags_cat(int argc, char *argv[], struct option long_options[], char *flags) {
+    int opt, idx = 0;
+    while ((opt = getopt_long(argc, argv, "+beEnstTv", long_options, &idx)) != -1) {
+        switch (opt) {
+            case 'b':
+                append_flag(flags, 'b');
+                append_flag(flags, 'n');
+                break;
+            case 'e':
+                append_flag(flags, 'E');
+                append_flag(flags, 'v');
+                break;
+            case 'E':
+                append_flag(flags, 'E');
+                break;
+            case 'n':
+                append_flag(flags, 'n');
+                break;
+            case 's':
+                append_flag(flags, 's');
+                break;
+            case 't':
+                append_flag(flags, 'T');
+                append_flag(flags, 'v');
+                break;
+            case 'T':
+                append_flag(flags, 'T');
+                break;
+            case 'v':
+                append_flag(flags, 'v');
+                break;
+            default:
+                printf("Неизвестный флаг\n");
+                return;
+        }
+    }
+}

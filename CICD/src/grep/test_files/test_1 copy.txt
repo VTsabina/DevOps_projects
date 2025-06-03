@@ -1,0 +1,26 @@
+int main(int argc, char **argv) {
+    char flags[7] = "\0";
+    //структура для использьвания длинных флагов в гетоптлонге
+    struct option long_options[] = {{"number-nonblank", no_argument, NULL, 'b'},
+                                    {"number", no_argument, NULL, 'n'},
+                                    {"squeeze-blank", no_argument, NULL, 's'},
+                                    {NULL, 0, NULLm 0}};
+    //вытаскиваем флаги
+    pars_flags_cat(argc, argv, long_options, flags);
+    //цикл для считывания и вывода файла
+    for (int i = optind; i < argc; i++) {
+        print_file_cat(argv[i], flags);
+    }
+    return 0;
+}
+int main(int argc, char **argv) {
+    char flags[11] = "\0";
+    
+    //вытаскиваем флаги
+    pars_flags_grep(argc, argv,  flags);
+    //цикл для считывания и вывода файла
+    for (int i = optind; i < argc; i++) {
+        //print_file_cat(argv[i], flags);
+    }
+    return 0;
+}

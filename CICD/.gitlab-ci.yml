@@ -1,0 +1,58 @@
+stages:
+  - build
+  - codestyle
+  - test
+  - deploy
+
+
+build-job:
+  stage: build
+  script:
+    - rm -rf artifacts
+    - mkdir artifacts
+    - (cd src/cat && make s21_cat)
+    - (cd src/grep && make s21_grep)
+    - cp src/cat/s21_cat src/grep/s21_grep artifacts
+    - bash src/dot.sh
+  artifacts:
+    paths:
+      - artifacts
+    expire_in: "30 days"
+  tags:
+    - delmerfi  
+
+
+codestyle-job:
+  stage: codestyle
+  script:
+    - (cd src/cat && clang-format -n *.c *.h)
+    - (cd src/grep && clang-format -n *.c *.h)
+    - bash src/dot.sh 
+  tags:
+    - delmerfi 
+
+
+test-job:
+  stage: test
+  script:
+    - cd src/cat
+    - make s21_cat
+    - bash tests_for_cat.sh
+    - cd ../grep
+    - make s21_grep
+    - bash tests_for_grep.sh
+    - cd ..
+    - bash dot.sh
+  tags:
+    - delmerfi  
+
+
+deploy-job:
+  stage: deploy    
+  script:
+    - (cd src/cat && make s21_cat)
+    - (cd src/grep && make s21_grep)
+    - (cd src && bash deploy.sh)
+    - (cd src && bash dot.sh) 
+  tags:
+    - delmerfi
