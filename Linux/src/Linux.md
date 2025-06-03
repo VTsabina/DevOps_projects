@@ -4,7 +4,7 @@
 
 + **Установка системы**
 
-![Установка системы](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_1.png "Установка системы")
+![Установка системы](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_1.png "Установка системы")
 
 [Вывод команды `cat /etc/issue`]
 
@@ -12,13 +12,13 @@
 
 + **Создание пользователя**
 
-![Создан новый пользователь keller](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_2-1.png "Создан новый пользователь keller")
+![Создан новый пользователь keller](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_2-1.png "Создан новый пользователь keller")
 
 [Создание пользователя с помощью утилиты `adduser` и добавление в группу adm командой `usermode -a -G adm`]
 
 + **Проверка пользователей**
 
-![Вывод команды cat /etc/passwd](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_2-2.png "Вывод команды cat /etc/passwd")
+![Вывод команды cat /etc/passwd](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_2-2.png "Вывод команды cat /etc/passwd")
 
 [Вывод команды `cat /etc/passwd`]
 
@@ -26,25 +26,25 @@
 
 + **Переименование хоста**
 
-![Меняем имя хоста](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_3-1.png "Меняем имя хоста")
+![Меняем имя хоста](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_3-1.png "Меняем имя хоста")
 
 [Изменение имени хоста с помощью команды `hostnamectl set-hostname` и его проверка командой `hostname`]
 
 + **Настройка временной зоны**
 
-![Изменение временной зоны](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_3-2.png "Изменение временной зоны")
+![Изменение временной зоны](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_3-2.png "Изменение временной зоны")
 
 [Изменение временной зоны с помощью команды `timedatectl set-timezone` и его проверка командой `timedatectl`]
 
 + **Просмотр интерфейсов**
 
-![Просмотр сетевых интерфейсов](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_3-3.png "Просмотр сетевых интерфейсов")
+![Просмотр сетевых интерфейсов](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_3-3.png "Просмотр сетевых интерфейсов")
 
 [Просмотр сетевых интерфейсов с помощью  `ip -br link show`]
 
 + **Получение ip-адреса от DHCP**
 
-![Получение ip-адреса от DHCP](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_3-4.png "Получение ip-адреса от DHCP")
+![Получение ip-адреса от DHCP](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_3-4.png "Получение ip-адреса от DHCP")
 
 [Получение ip-адреса от DHCP с помощью `dhclient`]
 
@@ -52,9 +52,9 @@
 
 + **Внешний адрес шлюза, внутренний адрес шлюза** 
 
-![Просмотр внешнего ip-адреса](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_3-5.png "Просмотр внешнего ip-адреса")
+![Просмотр внешнего ip-адреса](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_3-5.png "Просмотр внешнего ip-адреса")
 
-![Просмотр ip-адресов шлюза](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_3-6.png "Просмотр ip-адресов шлюза")
+![Просмотр ip-адресов шлюза](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_3-6.png "Просмотр ip-адресов шлюза")
 
 [Просмотр внешнего ip-адреса с помощью `curl` и ip-адресов шлюза с помощью `ip route`]
 
@@ -68,33 +68,33 @@ sudo vim /etc/netplan/*.yaml
 sudo netplan apply
 ```
 
-![Меняем файл Netplan](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_4-1.png "Меняем файл Netplan")
+![Меняем файл Netplan](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_4-1.png "Меняем файл Netplan")
 
-![Файл до изменений](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_4-2.png "Файл до изменений")
+![Файл до изменений](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_4-2.png "Файл до изменений")
 
 [Файл до изменений]
 
-![Файл после изменений](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_4-3.png "Файл после изменений")
+![Файл после изменений](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_4-3.png "Файл после изменений")
 
 [Файл после изменений]
 
-![Сохраняем изменения](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_4-4.png "Сохраняем изменения")
+![Сохраняем изменения](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_4-4.png "Сохраняем изменения")
 
 + **Проверка адреса интерфейса после перезагрузки**
 
-![Проверяем адрес интерфейса](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_4-5.png "Проверяем адрес интерфейса")
+![Проверяем адрес интерфейса](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_4-5.png "Проверяем адрес интерфейса")
 
-![ip route](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_4-6.png "ip route")
+![ip route](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_4-6.png "ip route")
 
-![Проверяем DNS](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_4-7.png "Проверяем DNS")
+![Проверяем DNS](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_4-7.png "Проверяем DNS")
 
 [Вывод команд ip addr и ip route и проверка DNS с помощью команды `systemd-resolve --status | grep 'DNS Servers' -A2`]
 
 + **Пинг 1.1.1.1 и ya.ru**
 
-![Пингуем 1.1.1.1](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_4-8.png "Пингуем 1.1.1.1")
+![Пингуем 1.1.1.1](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_4-8.png "Пингуем 1.1.1.1")
 
-![Пингуем ya.ru](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_4-9.png "Пингуем ya.ru")
+![Пингуем ya.ru](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_4-9.png "Пингуем ya.ru")
 
 [Пингуем хосты командой `ping -c 4`, чтобы ограничить количество отправляемых пакетов до 4, иначе он будет отправлять их до бесконечности или прерывания]
 
@@ -103,7 +103,7 @@ sudo netplan apply
 ```
 sudo apt upgrade
 ```
-![Обновление пакетов](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_5-1.png "Обновление пакетов")
+![Обновление пакетов](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_5-1.png "Обновление пакетов")
 
 [Обновление системных пакетов выполнено]
 
@@ -112,7 +112,7 @@ sudo apt upgrade
 ```
 sudo usermode -aG sudo keller
 ```
-![Предоставление прав sudo](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_5-2.png "Предоставление прав sudo пользователю и изменение имени устройства")
+![Предоставление прав sudo](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_5-2.png "Предоставление прав sudo пользователю и изменение имени устройства")
 
 [Предоставление прав sudo и изменение имени компьютера под пользователем keller]
 
@@ -124,7 +124,7 @@ sudo usermode -aG sudo keller
 sudo apt install --reinstall systemd-timesyncd
 sudo dpkg-reconfigure tzdata
 ```
-![Синхронизация времени](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_6.png "Синхронизация времени")
+![Синхронизация времени](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_6.png "Синхронизация времени")
 
 [Синхронизация времени через `systemd-timesyncd`]
 
@@ -145,7 +145,7 @@ delmerfi
 esc
 :wq //выход с сохранением
 ```
-![delmerfi vim](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-1.png "delmerfi vim")
+![delmerfi vim](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-1.png "delmerfi vim")
 
 [Файл в вим]
 
@@ -156,7 +156,7 @@ delmerfi
 ^W //выход
 ```
 
-![delmerfi nano](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-2.png "delmerfi nano")
+![delmerfi nano](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-2.png "delmerfi nano")
 
 [Файл в нано]
 
@@ -167,7 +167,7 @@ F2 //сохранение
 F10 //выход
 ```
 
-![delmerfi mcedit](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-3.png "delmerfi mcedit")
+![delmerfi mcedit](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-3.png "delmerfi mcedit")
 
 [Файл в mcedit]
 
@@ -175,20 +175,20 @@ F10 //выход
 
 **Vim: :q!**
 
-![21 School 21 vim](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-4.png "21 School 21 vim")
+![21 School 21 vim](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-4.png "21 School 21 vim")
 
 **Я: **
 
 **Nano: ^X**
 **Save buffer?: N**
 
-![21 School 21 nano](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-5.png "21 School 21 nano")
+![21 School 21 nano](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-5.png "21 School 21 nano")
 
 **Mcedit: F10**
 
 **Save file?: No**
 
-![21 School 21 mcedit](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-6.png "21 School 21 mcedit")
+![21 School 21 mcedit](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-6.png "21 School 21 mcedit")
 
 + **Поиск и замена.**
 
@@ -197,14 +197,14 @@ F10 //выход
 ```
 /School
 ```
-![vim search](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-7.png "vim search")
+![vim search](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-7.png "vim search")
 
 [Поиск в vim]
 
 ```
 :s/School/Test/
 ```
-![vim replace](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-8.png "vim replace")
+![vim replace](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-8.png "vim replace")
 
 [Замена в vim]
 
@@ -214,7 +214,7 @@ F10 //выход
 ^W
 ```
 
-![nano search](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-9.png "nano search")
+![nano search](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-9.png "nano search")
 
 [Поиск в nano]
 
@@ -222,11 +222,11 @@ F10 //выход
 Alt+R
 ```
 
-![nano replace 1](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-10.1.png "nano replace 1")
+![nano replace 1](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-10.1.png "nano replace 1")
 
-![nano replace 2](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-10.2.png "nano replace 2")
+![nano replace 2](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-10.2.png "nano replace 2")
 
-![nano replace result](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-10.3.png "nano replace result")
+![nano replace result](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-10.3.png "nano replace result")
 
 [Замена в nano]
 
@@ -236,9 +236,9 @@ Alt+R
 F7 - поиск от курсора до конца документа
 ```
 
-![mcedit search](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-11.1.png "mcedit search")
+![mcedit search](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-11.1.png "mcedit search")
 
-![mcedit search result](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-11.2.png "mcedit search result")
+![mcedit search result](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-11.2.png "mcedit search result")
 
 [Поиск в mcedit]
 
@@ -246,9 +246,9 @@ F7 - поиск от курсора до конца документа
 F4 - поиск и замена от курсора до конца документа
 ```
 
-![mcedit replace](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-12.1.png "mcedit replace")
+![mcedit replace](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-12.1.png "mcedit replace")
 
-![mcedit replace result](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_7-12.2.png "mcedit replace result")
+![mcedit replace result](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_7-12.2.png "mcedit replace result")
 
 [Замена в mcedit]
 
@@ -277,13 +277,13 @@ sudo systemctl restart ssh
 ```
 + **Проверяем, что процесс запущен, используя `ps -C sshd`. Команда ps выводит список всех процессов с информацией о них - PIDом, названием, временем выполнения, активным терминалом. Процессов много, и искать в огромной таблице неудобно. Ключ -С позволит найти наш процесс по имени команды.**
 
-![Вывод команды ps](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_8-1.png "Вывод команды ps")
+![Вывод команды ps](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_8-1.png "Вывод команды ps")
 
 [Вывод команды ps]
 
 + **Теперь перезапустим систему (через интерфейс VirtualBox или консольную команду `shutdown -r now`) и проверим через `netstat -tan`, что служба запустилась вместе с системой и настроена на нужный порт.**
 
-![Вывод команды netstat -tan](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_8-2.png "Вывод команды netstat -tan")
+![Вывод команды netstat -tan](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_8-2.png "Вывод команды netstat -tan")
 
 [Вывод команды `netstat -tan`]
 
@@ -293,7 +293,7 @@ sudo systemctl restart ssh
 
 + **Вывод top.**
 
-![Вывод команды top](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_9-1.png "Вывод команды top")
+![Вывод команды top](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_9-1.png "Вывод команды top")
 
 [Вывод команды `top`]
 
@@ -310,37 +310,37 @@ sudo systemctl restart ssh
 
 **Сортировки (F6):**
 
-![Сортировка вывода команды htop по PID](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_9-2.1.png "Сортировка вывода команды htop по PID")
+![Сортировка вывода команды htop по PID](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_9-2.1.png "Сортировка вывода команды htop по PID")
 
 [Сортировка вывода команды `htop` по PID]
 
-![Сортировка вывода команды htop по PERSENT_CPU](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_9-2.2.png "Сортировка вывода команды htop по PERSENT_CPU")
+![Сортировка вывода команды htop по PERSENT_CPU](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_9-2.2.png "Сортировка вывода команды htop по PERSENT_CPU")
 
 [Сортировка вывода команды `htop` по PERSENT_CPU]
 
-![Сортировка вывода команды htop по PERSENT_MEM](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_9-2.3.png "Сортировка вывода команды htop по PERSENT_MEM")
+![Сортировка вывода команды htop по PERSENT_MEM](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_9-2.3.png "Сортировка вывода команды htop по PERSENT_MEM")
 
 [Сортировка вывода команды `htop` по PERSENT_MEM]
 
-![Сортировка вывода команды htop по времени](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_9-2.4.png "Сортировка вывода команды htop по времени")
+![Сортировка вывода команды htop по времени](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_9-2.4.png "Сортировка вывода команды htop по времени")
 
 [Сортировка вывода команды `htop` по времени]
 
 + **F4 - отфильтровать sshd-процесс:**
 
-![Фильтр для sshd-процесса](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_9-3.png "Фильтр для sshd-процесса")
+![Фильтр для sshd-процесса](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_9-3.png "Фильтр для sshd-процесса")
 
 [Фильтр для sshd-процесса]
 
 + **F3 - поиск процесса syslog:**
 
-![Поиск процесса по запросу syslog](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_9-4.png "Поиск процесса по запросу syslog")
+![Поиск процесса по запросу syslog](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_9-4.png "Поиск процесса по запросу syslog")
 
 [Поиск процесса по запросу syslog]
 
 + **F2 - изменим интерфейс. Добавим вывод hostname и time, кастомизируем вывод uptime:**
 
-![Вывод hostname, clock, uptime](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_9-5.png "Вывод hostname, clock, uptime")
+![Вывод hostname, clock, uptime](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_9-5.png "Вывод hostname, clock, uptime")
 
 [Вывод hostname, clock, uptime]
 
@@ -348,7 +348,7 @@ sudo systemctl restart ssh
 
 + **Проверка состояния жёсткого диска.**
 
-![Вывод fdisk](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_10.png "Вывод fdisk")
+![Вывод fdisk](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_10.png "Вывод fdisk")
 
 [Вывод fdisk -l]
 
@@ -361,7 +361,7 @@ sudo systemctl restart ssh
 
 + **Выведем отдельно содержимое диска:**
 
-![Вывод df](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_11-1.png "Вывод df")
+![Вывод df](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_11-1.png "Вывод df")
 
 [Вывод df]
 
@@ -375,7 +375,7 @@ sudo systemctl restart ssh
 
 + **Более человекочитаемый формат размера**
 
-![Вывод df -Th](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_11-2.png "Вывод df -Th")
+![Вывод df -Th](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_11-2.png "Вывод df -Th")
 
 [Вывод df -Th]
 
@@ -391,7 +391,7 @@ sudo systemctl restart ssh
 
 + **Ещё один способ заглянуть внутрь диска.**
 
-![Вывод du](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_12-1.png "Вывод du")
+![Вывод du](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_12-1.png "Вывод du")
 
 [Вывод du]
 
@@ -402,7 +402,7 @@ sudo du -s -b /home - для вывода в байтах
 sudo du -s -h /home - для человекочитаемого вывода
 ```
 
-![Вывод du с флагами](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_12-2.png "Вывод du с флагами")
+![Вывод du с флагами](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_12-2.png "Вывод du с флагами")
 
 [Вывод du с флагами]
 
@@ -412,7 +412,7 @@ sudo du -s -h /home - для человекочитаемого вывода
 sudo du -h /var/log/*
 ```
 
-![Вывод du с *](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_12-3.png "Вывод du с *")
+![Вывод du с *](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_12-3.png "Вывод du с *")
 
 [Вывод du с *]
 
@@ -422,9 +422,9 @@ sudo du -h /var/log/*
 sudo du -ha /var/log/*
 ```
 
-![Вывод du с -ha](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_12-4.1.png "Вывод du с -ha")
+![Вывод du с -ha](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_12-4.1.png "Вывод du с -ha")
 
-![Вывод du с -ha](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_12-4.2.png "Вывод du с -ha")
+![Вывод du с -ha](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_12-4.2.png "Вывод du с -ha")
 
 [Вывод du с -ha для показа размеров всех вложенных файлов и папок]
 
@@ -438,22 +438,22 @@ ncdu /var
 ncdu /var/log
 ```
 
-![Вывод ncdu /home](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_13-1.png "Вывод ncdu /home")
+![Вывод ncdu /home](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_13-1.png "Вывод ncdu /home")
 
 [Вывод `ncdu /home`]
 
 **Размер совпал с тем, который показала утилита du - 144 Mb.**
 
 
-![Вывод ncdu /var](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_13-2.png "Вывод ncdu /var")
+![Вывод ncdu /var](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_13-2.png "Вывод ncdu /var")
 
-![Вывод ncdu /var/log](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_13-3.png "Вывод ncdu /var/log")
+![Вывод ncdu /var/log](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_13-3.png "Вывод ncdu /var/log")
 
 [Вывод `ncdu /var` и `ncdu var/log`]
 
 **Здесь видно, что размер выше того, который показала du. Это объясняется разрывом во времени, с которым происходили обращения к утилите. Приведём здесь новый вывод утилиты du.**
 
-![Вывод du](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_13-4.png "Вывод du")
+![Вывод du](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_13-4.png "Вывод du")
 
 [Вывод du]
 
@@ -471,13 +471,13 @@ ncdu /var/log
 2. Имя пользователя - vtsab.
 3. Метод входа - session opened for user vtsab by LOGIN(uid=0).
 
-![Вход в систему](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_14-1.png "Вход в систему")
+![Вход в систему](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_14-1.png "Вход в систему")
 
 [Информация об аутентификации пользователя в системном журнале]
 
 + **Теперь перезапускаем sshd через `sudo systemctl restart sshd` и в том же журнале видим:**
 
-![Информация о рестарте службы sshd](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_14-2.png "Информация о рестарте службы sshd")
+![Информация о рестарте службы sshd](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_14-2.png "Информация о рестарте службы sshd")
 
 [Информация о рестарте службы sshd]
 
@@ -485,7 +485,7 @@ ncdu /var/log
 
 **Добавим задачу в планировщик CRON. Для этого методом с помощью команды crontab -e отредактируем список задач и добавим туда строку `*/2 * * * * uptime`. Перезапустим cron. Теперь время в системе будет считываться в фоновом режиме каждые 2 минуты, каждый час, каждый день месяца, каждый месяц, каждый день недели. Проверим в журнале логов syslog:**
 
-![Информация из логов о работе cron](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_15-1.png "Информация из логов о работе cron")
+![Информация из логов о работе cron](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_15-1.png "Информация из логов о работе cron")
 
 [Информация из логов о работе cron]
 
@@ -495,7 +495,7 @@ ncdu /var/log
 crontab -l
 ```
 
-![Вывод crontab -l](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_15-2.png "Вывод crontab -l")
+![Вывод crontab -l](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_15-2.png "Вывод crontab -l")
 
 [Вывод списка задач cron командой `crontab -l`]
 
@@ -505,6 +505,6 @@ crontab -l
 crontab -r
 crontab -l
 ```
-![Вывод crontab -l после удаления всех задач](https://github.com/VTsabina/DevOps_projects/tree/main/Linux/datasets/Part_15-3.png "Вывод crontab -l после удаления всех задач")
+![Вывод crontab -l после удаления всех задач](https://github.com/VTsabina/DevOps_projects/blob/main/Linux/datasets/Part_15-3.png "Вывод crontab -l после удаления всех задач")
 
 [Вывод `crontab -l` после удаления всех задач]

@@ -12,11 +12,11 @@
 
 + **С "деплоем" через ssh пришлось повозиться. Что же надо сделать, чтобы заработало? Во-первых, настроить адаптеры виртуальных машин - второй адаптер поставить в режим Внутренняя сеть и задать следующие настройки**
 
-![Netplan bubuntanew](https://github.com/VTsabina/DevOps_projects/tree/main/CICD/datasets/bubuntanew.png "Netplan bubuntanew")
+![Netplan bubuntanew](https://github.com/VTsabina/DevOps_projects/blob/main/CICD/datasets/bubuntanew.png "Netplan bubuntanew")
 
 [Настройки машины, с которой будет производиться "деплой"]
 
-![Netplan bubuntanew2](https://github.com/VTsabina/DevOps_projects/tree/main/CICD/datasets/bubuntanew2.png "Netplan bubuntanew2")
+![Netplan bubuntanew2](https://github.com/VTsabina/DevOps_projects/blob/main/CICD/datasets/bubuntanew2.png "Netplan bubuntanew2")
 
 [Настройки машины, на которую будут копироваться файлы]
 
@@ -45,6 +45,6 @@
 
 **Пруфы тут:**
 
-![Телегабот](https://github.com/VTsabina/DevOps_projects/tree/main/CICD/datasets/telegram.png "Телегабот")
+![Телегабот](https://github.com/VTsabina/DevOps_projects/blob/main/CICD/datasets/telegram.png "Телегабот")
 
 [Вывод телегабота]
