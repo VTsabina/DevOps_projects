@@ -285,11 +285,7 @@
 
 ## Part 6. Динамическая настройка IP с помощью DHCP ##
 
-+ **Оставь надежду, всяк сюда входящий. Недурственный совет, учитывая, что мы собираемся настраивать DHCP-сервер в локальной сети. Что для этого нужно? Ну, во-первых, очевидно - помолиться дьяволу. А дальше - вот:**
-
-**Всё начинается невинно - с файлов конфигураций. В задании нам даже любовно прописали, что и как надо менять. Чего это они такие добрые? Да потому что потом будет гореть всё, что способно дышать. Вот и извиняются, никак, заранее.**
-
-**Но не будем забегать вперёд. Дабы не пестрить комментариями, охарактеризуем кратко: файлы конфигураций r2 поменяли в соответствии с заданием, сервер перезапустили. А после этого... Часа два не понимали, какого чёрта оно отказывается выдавать адреса. Но и с этим справились. Ай, какие молодцы.**
++ **Поменяем файлы конфигураций r2 в соответствии с заданием и перезапустим сервер.**
 
 ![Файл dgcpd.conf r2](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_6.1-r2-dhcpd-conf.png "Файл dgcpd.conf r2")
 
@@ -297,19 +293,13 @@
 
 ![Перезапуск сервера](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_6.1-r2-restart-server.png "Перезапуск сервера")
 
-![TWO HOURS LATER](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/two_hours_later.png)
-
-**ИИИИИИИИИИ НАКОНЕЦ-ТО ОНО ЗАРАБОТАЛО!!!!**
-
 ![WS21 ip a](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_6.1-ws21-ip-a.png "WS21 ip a")
 
-**А теперь проверим, что мы ничего в процессе не пролюбили, выражаясь словами одной моей очень приличной, но потрёпанной жизнью подруги (ну то есть пропингуем WS21 и WS22 и убедимся, что эти два одиночества не потеряли друг друга в нашей бескрайней паутине из пяти машин):**
+**Пропингуем WS21 и WS22 и убедимся, что они видят друг друга:**
 
 ![ws21-ws22-ping](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_6.1-ws21-ws22-ping.png "ws21-ws22-ping")
 
-**Пингуется. Слава пирожкам. Но это ещё не всё...**
-
-+ **Аналогичное извращение, но уже с mac-адресом, повторяем со второй частью нашей несчастной сети. Зададим mac-адрес для WS11 и заставим R1 выдавать ему айпишник по этому адресу:**
++ **Для второй части сети используем mac-адрес. Зададим mac-адрес для WS11 и заставим R1 выдавать ему ip по этому адресу:**
 
 ![Файл *.yaml ws11](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_6.1-ws11-mac-yaml.png "Файл *.yaml ws11")
 
@@ -317,17 +307,13 @@
 
 ![Файл resolv.conf r1](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_6.1-r1-resolve-conf.png "Файл resolv.conf r1")
 
-**Не знаю, о каких "аналогичных тестах" они говорили. Но давайте пропингуем WS11, допустим, с WS21. Опять же, чтобы убедиться, что они всё ещё чувствуют друг друга на расстоянии.**
+**Пропингуем WS11, допустим, с WS21.**
 
 ![ws11-ws21-ping](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_6.1-ws11-ws21-ping.png "ws11-ws21-ping")
 
-+ **И, наконец, вишенка на тортике. Запросим адрес для WS21:**
++ **Запросим адрес для WS21:**
 
 ![ws21-ip-a-before-dhclient](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_6.1-ws21-ip-a-before-dhclient.png "ws21-ip-a-before-dhclient")
-
-***ВЖУХ!***
-
-*В смысле:*
 
 ```
 dhclient -v
@@ -337,23 +323,19 @@ dhclient -v
 
 ![ws21-ip-a-after-dhclient](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_6.1-ws21-ip-a-after-dhclient.png "ws21-ip-a-after-dhclient")
 
-**По-моему, это первый раз, когда отчёт пишется быстрее, чем задания делаются...**
-
-***ААААРРРРРР***
-
 ## Part 7. NAT ##
 
-+ **Вечер подходит к концу, цензурные комментарии тоже. Поэтому займёмся апачей. Знаю, что нелогично. Но делать нечего. Остроумные комментарии тоже заканчиваются.**
++ **Настройка Apache**
 
-**Настроим конфиги на WS22 и R1. Руку на отсечение даю - они одинаковые. Поэтому здесь скриншот только один. Экономим место, трафик и нервы.**
+**Настроим файлы конфигурации на WS22 и R1. Они оба будут выглядеть так:.**
 
 ![ports-conf-ws22](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_7-ports-conf-ws22.png "ports-conf-ws22")
 
-**Запускаем шайтан-арбу**
+**Запуск**
 
 ![Запуск apache2](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_7-apache-start-r1-ws22.png "Запуск apache2")
 
-+ **Окей, теперь запустим на R2 фаерволл и проверим, что ничего не пингуется. Пока просто. Нам снова всё говорят в задании. Подозрительно...**
++ **Запустим на R2 имитацию файервола и проверим отсутствие пинга**
 
 ![Фаерволл на R2](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_7-r2-firewall-iptables1.png "Фаерволл на R2")
 
@@ -361,17 +343,13 @@ dhclient -v
 
 ![Пинг WS22 и R1](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_7-ping-ws22-r1.png "Пинг WS22 и R1")
 
-+ **Так, хорошо, а теперь надо... разрешить маршрутизацию пакетов? Ладно, хотя это уже начинает напрягать...**
++ **Разрешим маршрутизацию пакетов**
 
 ![Фаерволл на R2](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_7-r2-firewall-iptables2.png "Фаерволл на R2")
 
 ![Пинг WS22 и R1](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_7-ping-ws22-r1-after.png "Пинг WS22 и R1")
 
-**Окей, заработало.**
-
-++ **Ах, добавить SNAT и DNAT... В таблицу, значит. И чтоб потом оно telnet-ом определялось. Так вот чего они такие добрые были в начале... Здесь могла бы быть картинка про TWO HOURS LATER, но она уже была, а нас, вообще-то, учат не дублировать.**
-
-**Как бы то ни было, а результат достигнут. Чтоб его...**
+++ **Добавим SNAT и DNAT**
 
 ![Фаерволл на R2](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_7-r2-firewall-iptables3.png "Фаерволл на R2")
 
@@ -381,14 +359,6 @@ dhclient -v
 
 ## Part 8. Bonus. Знакомство с SSH Tunnels ##
 
-+ **Если для настройки сервера DHCP дьяволу надо помолиться, то для подключения по ssh придётся отдать ему душу. Бесплатно. Да, вы же не думаете, что с вами ещё и торговаться будут?**
-
-**Можно было бы сказать многое. Например, как переустанавливалась без какой бы то ни было видимой причины слетевшая служба ssh на одной из машин. Как ломался и фиксился файл sshd_config. Как по-новой генерировались ключи. Как мутные от недосыпа глаза смотрели со всей ненавистью этого мира на холодную и чёрствую надпись "Access Denied. Try again". Много можно было бы сказать - но я не буду. Обойдёмся двумя лаконичными скриншотами - слишком лаконичными по сравнению с тем, через что пришлось пройти, чтобы их получить.**
-
 ![Получение доступа к серверу WS22 с WS21](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_8-ws21-to-ws22-telnet.png "Получение доступа к серверу WS22 с WS21")
 
 ![Получение доступа к серверу WS22 с WS11](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Part_8-ws11-to-ws22-telnet.png "Получение доступа к серверу WS22 с WS11")
-
-**Ну, ладно-ладно. Я, конечно, драматизирую для красного словца. Никаких мутных от недосыпа глаз и депрессии. Моя психика в полном порядке. Сейчас только пойду разобью комп об стену и сяду, как ни в чём не бывало, чинить код. А, нет, не разобью. Мне же ещё код чинить.**
-
-![The end](https://github.com/VTsabina/DevOps_projects/blob/main/LinuxNetwork/datasets/Directed.png)
